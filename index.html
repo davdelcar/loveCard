@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+
+  <script>
+    function openCart(){
+        const solapaConatainer = document.getElementById('solapa-id')
+        const solapa = document.getElementById('solapa')
+        const carta = document.getElementById('carta');
+        const paper = document.getElementById('paper')
+          
+          solapa.classList.add('swing-top-fwd')
+          carta.classList.remove('bounce-in-top')
+          setTimeout(() => {
+            solapaConatainer.classList.add('solapa-0')
+            solapaConatainer.classList.remove('solapa')
+            paper.classList.add('slide-fwd-top')
+        }, 1000);
+        setTimeout(() => {
+          carta.classList.add('slide-out-blurred-left')
+        }, 4000);
+    }
+  </script>
+  <title>Document</title>
+</head>
+
+<div>
+  <div class="title-text text-focus-in">Has recibido una carta</div>
+  <div class="container"> 
+  <div class="carta bounce-in-top" id="carta" style="cursor: pointer;" onclick="openCart()">
+    <div class="papel">
+      <div class="paper" id="paper"></div>
+    </div>
+    <div class="solapa" id="solapa-id">
+      <div class="vector" id="solapa">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.41 225.32">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #ffffff;
+                stroke: rgb(163, 163, 163);
+                stroke-miterlimit: 10;
+              }
+            </style>
+          </defs>
+          <g id="Capa_2" data-name="Capa 2">
+            <g id="Capa_1-2" data-name="Capa 1">
+              <path class="cls-1" d="M1.2.5h462l-218.95,219a18.35,18.35,0,0,1-26,0Z" />ç
+            </g>
+          </g>
+        </svg>
+      </div>      
+    </div>
+    <div class="carta-front" >
+      
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
