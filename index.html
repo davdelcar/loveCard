@@ -7,26 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <script src="index.js"></script>
-
-  <script>
-    function openCart(){
-        const solapaConatainer = document.getElementById('solapa-id')
-        const solapa = document.getElementById('solapa')
-        const carta = document.getElementById('carta');
-        const paper = document.getElementById('paper')
-          
-          solapa.classList.add('swing-top-fwd')
-          carta.classList.remove('bounce-in-top')
-          setTimeout(() => {
-            solapaConatainer.classList.add('solapa-0')
-            solapaConatainer.classList.remove('solapa')
-            paper.classList.add('slide-fwd-top')
-        }, 1000);
-        setTimeout(() => {
-          carta.classList.add('slide-out-blurred-left')
-        }, 4000);
-    }
-  </script>
   <title>Document</title>
 </head>
 
